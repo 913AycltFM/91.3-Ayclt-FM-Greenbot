@@ -26,8 +26,8 @@ Greenbot is a Discord voice bot for the 91.3 Ayclt FM radio stations. It uses Di
 1. Install Python 3.12 or newer and FFmpeg.
 2. Install dependencies: `pip install -r requirements.txt`.
 3. Copy `.env.example` to `.env`.
-4. Set `DISCORD_TOKEN` to your Discord bot token.
-5. Check the public stream listen URLs in AzuraCast and fill in `STREAM_HD2`, `STREAM_HD3`, and `STREAM_HD4`.
+4. Set `DISCORD_TOKEN` as a private environment variable in the machine or hosting service that runs Greenbot. Do not commit the token to GitHub or put it in `.env.example`.
+5. Check the public stream listen URLs in AzuraCast and fill in `STREAM_HD2`, `STREAM_HD3`, and `STREAM_HD4` in your private environment configuration.
 6. Run `python -m greenbot.bot`.
 
 The bot's default AzuraCast API base is `https://radio.913aycltfm.com`. The now-playing endpoint for each station is:
